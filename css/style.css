@@ -670,13 +670,10 @@ a:hover { color: var(--accent); }
 }
 
 .arch-stack-list {
-  margin-top: auto;
-}
-
-.arch-stack-list {
   list-style: none;
   font-size: 0.85rem;
   color: var(--text-muted);
+  margin-top: auto;
 }
 
 .arch-stack-list li {
