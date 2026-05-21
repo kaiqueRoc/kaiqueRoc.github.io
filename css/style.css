@@ -499,6 +499,11 @@ a:hover { color: var(--accent); }
   color: var(--accent-2);
 }
 
+.stack-panels {
+  margin-bottom: 0;
+  overflow: visible;
+}
+
 .stack-panel { display: none; animation: fadeIn 0.35s ease; }
 .stack-panel.active { display: block; }
 
@@ -606,30 +611,60 @@ a:hover { color: var(--accent); }
   font-size: 0.75rem;
 }
 
-.arch-title {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+/* Arquitetura — bloco isolado para evitar sobreposição */
+.arch-section {
+  clear: both;
+  width: 100%;
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
 }
 
-.arch-sub { margin-bottom: 1.5rem !important; }
+.arch-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+.arch-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.arch-sub {
+  margin: 0;
+  padding: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 52rem;
+}
 
 .arch-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   .arch-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .arch-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
   }
 }
 
@@ -641,6 +676,10 @@ a:hover { color: var(--accent); }
   border-radius: var(--radius);
   padding: 1.35rem;
   min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: auto;
 }
 
 .arch-card h4 {
@@ -1013,8 +1052,14 @@ a:hover { color: var(--accent); }
 
   .section { padding: 3.5rem 0; }
 
+  .arch-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
   .arch-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .stack-tabs { gap: 0.35rem; }
