@@ -15,22 +15,50 @@ navLinks?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-const header = document.querySelector(".header");
-window.addEventListener("scroll", () => {
-  header?.classList.toggle("scrolled", window.scrollY > 40);
+/* Stack tabs */
+const stackTabs = document.querySelectorAll(".stack-tab");
+const stackPanels = document.querySelectorAll(".stack-panel");
+
+stackTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = tab.dataset.tab;
+
+    stackTabs.forEach((t) => {
+      t.classList.remove("active");
+      t.setAttribute("aria-selected", "false");
+    });
+    tab.classList.add("active");
+    tab.setAttribute("aria-selected", "true");
+
+    stackPanels.forEach((panel) => {
+      const isActive = panel.id === `panel-${target}`;
+      panel.classList.toggle("active", isActive);
+      panel.hidden = !isActive;
+    });
+  });
 });
 
-const observer = new IntersectionObserver(
+/* Animate proficiency bars on scroll */
+const animateBars = (container) => {
+  container.querySelectorAll(".level-fill").forEach((bar) => {
+    const width = bar.dataset.width;
+    if (width) {
+      bar.style.setProperty("--w", `${width}%`);
+      bar.classList.add("animated");
+    }
+  });
+};
+
+const levelObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.querySelectorAll(".level-fill").forEach((bar) => {
-          bar.style.width = bar.style.width;
-        });
+        animateBars(entry.target);
+        levelObserver.unobserve(entry.target);
       }
     });
   },
-  { threshold: 0.2 }
+  { threshold: 0.15 }
 );
 
-document.querySelectorAll(".skill-levels").forEach((el) => observer.observe(el));
+document.querySelectorAll(".skill-levels").forEach((el) => levelObserver.observe(el));

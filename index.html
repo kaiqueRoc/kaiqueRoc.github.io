@@ -21,7 +21,7 @@
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#stack">Tecnologias</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -45,10 +45,13 @@
           <a href="https://github.com/kaiqueRoc" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
         </div>
         <div class="hero-tags">
+          <span>Microsserviços</span>
+          <span>REST · SOAP</span>
           <span>PHP · Hyperf</span>
           <span>Node.js · Go</span>
-          <span>React · TypeScript</span>
-          <span>AWS · Docker</span>
+          <span>React · Next.js</span>
+          <span>RabbitMQ · Redis</span>
+          <span>AWS · K8s</span>
         </div>
       </div>
       <div class="hero-visual">
@@ -56,12 +59,14 @@
           <div class="code-header">
             <span></span><span></span><span></span>
           </div>
-          <pre><code><span class="kw">const</span> kaique = {
-  role: <span class="str">"Software Engineer"</span>,
-  focus: [<span class="str">"microservices"</span>, <span class="str">"integrations"</span>],
-  stack: [<span class="str">"PHP"</span>, <span class="str">"Node"</span>, <span class="str">"Go"</span>],
-  location: <span class="str">"Belo Horizonte, BR"</span>,
-  available: <span class="bool">true</span>
+          <pre><code><span class="kw">const</span> stack = {
+  backend: [<span class="str">"PHP/Hyperf"</span>, <span class="str">"Node"</span>, <span class="str">"Go"</span>, <span class="str">"C#"</span>],
+  frontend: [<span class="str">"React"</span>, <span class="str">"Next.js"</span>, <span class="str">"TS"</span>],
+  integrations: [<span class="str">"REST"</span>, <span class="str">"SOAP"</span>, <span class="str">"B2B APIs"</span>],
+  data: [<span class="str">"PostgreSQL"</span>, <span class="str">"SQL Server"</span>, <span class="str">"DynamoDB"</span>],
+  messaging: [<span class="str">"RabbitMQ"</span>, <span class="str">"Redis"</span>, <span class="str">"SQS"</span>],
+  cloud: [<span class="str">"AWS"</span>, <span class="str">"Docker"</span>, <span class="str">"K8s"</span>],
+  observability: [<span class="str">"Sentry"</span>, <span class="str">"Grafana"</span>, <span class="str">"Prometheus"</span>]
 };</code></pre>
         </div>
       </div>
@@ -101,6 +106,9 @@
           <h3>Engenheiro de Software</h3>
           <p class="timeline-company">NeoTrip · São Paulo</p>
           <p>Soluções para hotelaria com tecnologia e IA — operação mais ágil, inteligente e eficiente para hoteleiros e hóspedes.</p>
+          <div class="timeline-tech">
+            <span>PHP</span><span>Node.js</span><span>Microsserviços</span><span>APIs distribuídas</span><span>Docker</span><span>CI/CD</span>
+          </div>
         </article>
         <article class="timeline-item">
           <div class="timeline-meta">
@@ -113,6 +121,10 @@
             <li>Hotéis, transporte rodoviário e câmbio (REST + SOAP)</li>
             <li>RabbitMQ, Redis, Docker, Sentry e testes de integração</li>
           </ul>
+          <div class="timeline-tech">
+            <span>PHP</span><span>Hyperf</span><span>Node.js</span><span>SOAP</span><span>REST</span>
+            <span>RabbitMQ</span><span>Redis</span><span>Docker</span><span>Sentry</span><span>Testes de integração</span>
+          </div>
         </article>
         <article class="timeline-item">
           <div class="timeline-meta">
@@ -121,6 +133,9 @@
           <h3>Developer Full Stack Pleno</h3>
           <p class="timeline-company">Grupo Techshop · Belo Horizonte</p>
           <p>APIs para marketplaces — SQL Server, Node.js (Express), React. Otimização de fluxos de produtos e vendas, APIs de frete. SOLID e boas práticas.</p>
+          <div class="timeline-tech">
+            <span>Node.js</span><span>Express</span><span>React</span><span>SQL Server</span><span>REST APIs</span><span>SOLID</span>
+          </div>
         </article>
         <article class="timeline-item">
           <div class="timeline-meta">
@@ -129,98 +144,485 @@
           <h3>Full Stack Developer</h3>
           <p class="timeline-company">Link Certificação Digital · Belo Horizonte</p>
           <p>CRM completo (PHP/Laravel), REST APIs, Power BI, NFS-e via SOAP e gestão de compras/vendas.</p>
+          <div class="timeline-tech">
+            <span>PHP</span><span>Laravel</span><span>REST</span><span>SOAP</span><span>Power BI</span><span>CRM</span>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="section section-alt">
+    <section id="stack" class="section section-alt">
       <div class="container">
-        <h2 class="section-title"><span class="section-num">03.</span> O que eu sei</h2>
-        <p class="section-sub">Stack que uso no dia a dia e em produção.</p>
+        <h2 class="section-title"><span class="section-num">03.</span> Stack & tecnologias</h2>
+        <p class="section-sub">
+          Ecossistema completo do meu perfil — linguagens, integrações, dados, mensageria, cloud e qualidade.
+          Cada área com contexto de uso em sistemas reais e de alta complexidade.
+        </p>
 
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Backend</h3>
-            <div class="skill-tags">
-              <span>PHP</span><span>Hyperf</span><span>Laravel</span>
-              <span>Node.js</span><span>Express</span><span>Go</span>
-              <span>C#</span><span>Loopback 4</span>
+        <div class="tech-marquee" aria-hidden="true">
+          <div class="tech-marquee-track">
+            <span class="tech-badge tech-php">PHP</span>
+            <span class="tech-badge tech-hyperf">Hyperf</span>
+            <span class="tech-badge tech-laravel">Laravel</span>
+            <span class="tech-badge tech-node">Node.js</span>
+            <span class="tech-badge tech-express">Express</span>
+            <span class="tech-badge tech-go">Go</span>
+            <span class="tech-badge tech-csharp">C#</span>
+            <span class="tech-badge tech-react">React</span>
+            <span class="tech-badge tech-next">Next.js</span>
+            <span class="tech-badge tech-ts">TypeScript</span>
+            <span class="tech-badge tech-rest">REST</span>
+            <span class="tech-badge tech-soap">SOAP</span>
+            <span class="tech-badge tech-pg">PostgreSQL</span>
+            <span class="tech-badge tech-mssql">SQL Server</span>
+            <span class="tech-badge tech-dynamo">DynamoDB</span>
+            <span class="tech-badge tech-rabbit">RabbitMQ</span>
+            <span class="tech-badge tech-redis">Redis</span>
+            <span class="tech-badge tech-aws">AWS</span>
+            <span class="tech-badge tech-docker">Docker</span>
+            <span class="tech-badge tech-k8s">Kubernetes</span>
+            <span class="tech-badge tech-sentry">Sentry</span>
+            <span class="tech-badge tech-grafana">Grafana</span>
+            <!-- duplicate for seamless loop -->
+            <span class="tech-badge tech-php">PHP</span>
+            <span class="tech-badge tech-hyperf">Hyperf</span>
+            <span class="tech-badge tech-laravel">Laravel</span>
+            <span class="tech-badge tech-node">Node.js</span>
+            <span class="tech-badge tech-express">Express</span>
+            <span class="tech-badge tech-go">Go</span>
+            <span class="tech-badge tech-csharp">C#</span>
+            <span class="tech-badge tech-react">React</span>
+            <span class="tech-badge tech-next">Next.js</span>
+            <span class="tech-badge tech-ts">TypeScript</span>
+            <span class="tech-badge tech-rest">REST</span>
+            <span class="tech-badge tech-soap">SOAP</span>
+            <span class="tech-badge tech-pg">PostgreSQL</span>
+            <span class="tech-badge tech-mssql">SQL Server</span>
+            <span class="tech-badge tech-dynamo">DynamoDB</span>
+            <span class="tech-badge tech-rabbit">RabbitMQ</span>
+            <span class="tech-badge tech-redis">Redis</span>
+            <span class="tech-badge tech-aws">AWS</span>
+            <span class="tech-badge tech-docker">Docker</span>
+            <span class="tech-badge tech-k8s">Kubernetes</span>
+            <span class="tech-badge tech-sentry">Sentry</span>
+            <span class="tech-badge tech-grafana">Grafana</span>
+          </div>
+        </div>
+
+        <div class="stack-tabs" role="tablist">
+          <button class="stack-tab active" role="tab" aria-selected="true" data-tab="backend">Backend</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="frontend">Frontend</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="integrations">Integrações</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="data">Dados</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="infra">Cloud & DevOps</button>
+          <button class="stack-tab" role="tab" aria-selected="false" data-tab="quality">Qualidade</button>
+        </div>
+
+        <div class="stack-panels">
+          <div class="stack-panel active" id="panel-backend" role="tabpanel">
+            <div class="tech-detail-grid">
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-php">PHP</span>
+                  <div>
+                    <h3>PHP · Hyperf · Laravel</h3>
+                    <span class="tech-level tech-level-advanced">Avançado · Produção</span>
+                  </div>
+                </div>
+                <p>Microsserviços escaláveis com Hyperf, APIs de alta concorrência, injeção de dependência, workers e integração com filas.</p>
+                <ul class="tech-use-cases">
+                  <li>Arquitetura de microsserviços em travel tech</li>
+                  <li>Integrações B2B com provedores externos</li>
+                  <li>CRM e sistemas legados com Laravel</li>
+                </ul>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-node">Node</span>
+                  <div>
+                    <h3>Node.js · Express · Loopback 4</h3>
+                    <span class="tech-level tech-level-advanced">Avançado · Produção</span>
+                  </div>
+                </div>
+                <p>Serviços Node para integrações, APIs REST, middlewares, validação e orquestração entre sistemas distribuídos.</p>
+                <ul class="tech-use-cases">
+                  <li>APIs de marketplace e cálculo de frete</li>
+                  <li>Camada de integração entre front e legado</li>
+                  <li>Serviços auxiliares em ecossistema polyglot</li>
+                </ul>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-go">Go</span>
+                  <div>
+                    <h3>Go</h3>
+                    <span class="tech-level tech-level-mid">Intermediário–Avançado</span>
+                  </div>
+                </div>
+                <p>Utilitários e serviços com forte performance, concorrência nativa e binários leves para automação e APIs.</p>
+                <ul class="tech-use-cases">
+                  <li>CLIs e automações de infraestrutura</li>
+                  <li>Serviços de alto throughput</li>
+                </ul>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-csharp">C#</span>
+                  <div>
+                    <h3>C#</h3>
+                    <span class="tech-level tech-level-mid">Intermediário</span>
+                  </div>
+                </div>
+                <p>Orientação a objetos, APIs e fundamentos sólidos para integrações em ecossistemas .NET quando necessário.</p>
+              </article>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>Frontend</h3>
-            <div class="skill-tags">
-              <span>React</span><span>Next.js</span><span>TypeScript</span>
-              <span>AngularJS</span><span>HTML/CSS</span>
+
+          <div class="stack-panel" id="panel-frontend" role="tabpanel" hidden>
+            <div class="tech-detail-grid">
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-react">React</span>
+                  <div>
+                    <h3>React · Next.js · TypeScript</h3>
+                    <span class="tech-level tech-level-advanced">Intermediário–Avançado</span>
+                  </div>
+                </div>
+                <p>SPAs e aplicações modernas com tipagem forte, componentização, hooks e SSR/SSG com Next.js quando aplicável.</p>
+                <ul class="tech-use-cases">
+                  <li>Painéis de marketplace e gestão de produtos</li>
+                  <li>Apps de perfil e dashboards (user-profile-app)</li>
+                  <li>Front-end integrado a APIs REST</li>
+                </ul>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-ts">TS</span>
+                  <div>
+                    <h3>TypeScript</h3>
+                    <span class="tech-level tech-level-advanced">Avançado</span>
+                  </div>
+                </div>
+                <p>Contratos tipados, DTOs, redução de bugs em integração front/back e manutenção de bases grandes.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-angular">NG</span>
+                  <div>
+                    <h3>AngularJS</h3>
+                    <span class="tech-level tech-level-mid">Experiência</span>
+                  </div>
+                </div>
+                <p>Manutenção e evolução de aplicações legadas com padrões MVC e integração a APIs REST.</p>
+              </article>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>Integrações & APIs</h3>
-            <div class="skill-tags">
-              <span>REST</span><span>SOAP</span>
-              <span>Microsserviços</span><span>APIs B2B</span>
+
+          <div class="stack-panel" id="panel-integrations" role="tabpanel" hidden>
+            <div class="tech-detail-grid">
+              <article class="tech-detail-card tech-detail-wide">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-rest">REST</span>
+                  <div>
+                    <h3>REST · APIs distribuídas</h3>
+                    <span class="tech-level tech-level-advanced">Avançado · Core skill</span>
+                  </div>
+                </div>
+                <p>Design e consumo de APIs REST em ambientes de alta demanda: versionamento, autenticação, rate limit, idempotência e contratos estáveis entre microsserviços.</p>
+                <ul class="tech-use-cases">
+                  <li>Orquestração entre serviços de hotel, transporte e câmbio</li>
+                  <li>APIs públicas e internas com documentação e testes</li>
+                  <li>Padronização de payloads e tratamento de erros</li>
+                </ul>
+              </article>
+              <article class="tech-detail-card tech-detail-wide">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-soap">SOAP</span>
+                  <div>
+                    <h3>SOAP · Sistemas legados</h3>
+                    <span class="tech-level tech-level-advanced">Avançado · Core skill</span>
+                  </div>
+                </div>
+                <p>Integração com provedores e governo (NFS-e, GDS, ERPs) via WSDL, XML, certificados e fluxos síncronos/assíncronos em produção.</p>
+                <ul class="tech-use-cases">
+                  <li>Reservas e câmbio com fornecedores legados</li>
+                  <li>Emissão de NFS-e na Link Certificação</li>
+                  <li>Ponte entre microsserviços modernos e mainframes</li>
+                </ul>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-hyperf">μS</span>
+                  <div>
+                    <h3>Microsserviços</h3>
+                    <span class="tech-level tech-level-advanced">Avançado</span>
+                  </div>
+                </div>
+                <p>Decomposição por domínio, comunicação assíncrona, resiliência, fallback com Redis e observabilidade ponta a ponta.</p>
+              </article>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>Dados</h3>
-            <div class="skill-tags">
-              <span>PostgreSQL</span><span>SQL Server</span>
-              <span>DynamoDB</span><span>Prisma</span>
+
+          <div class="stack-panel" id="panel-data" role="tabpanel" hidden>
+            <div class="tech-detail-grid">
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-pg">PG</span>
+                  <div><h3>PostgreSQL</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Modelagem relacional, índices, transações e queries otimizadas em serviços distribuídos.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-mssql">SQL</span>
+                  <div><h3>SQL Server</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Estruturação de dados em marketplaces, relatórios e integração com APIs de produtos e vendas.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-dynamo">DDB</span>
+                  <div><h3>DynamoDB</h3><span class="tech-level tech-level-mid">Intermediário–Avançado</span></div>
+                </div>
+                <p>Armazenamento NoSQL serverless na AWS para cargas escaláveis e baixa latência.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-powerbi">BI</span>
+                  <div><h3>Power BI</h3><span class="tech-level tech-level-mid">Intermediário</span></div>
+                </div>
+                <p>Dashboards e relatórios de negócio integrados a CRM e bases operacionais.</p>
+              </article>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>Mensageria & Cache</h3>
-            <div class="skill-tags">
-              <span>RabbitMQ</span><span>Redis</span><span>SQS</span>
+
+          <div class="stack-panel" id="panel-infra" role="tabpanel" hidden>
+            <div class="tech-detail-grid">
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-rabbit">RMQ</span>
+                  <div><h3>RabbitMQ</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Filas, exchanges, dead-letter, processamento assíncrono e desacoplamento entre microsserviços.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-redis">Redis</span>
+                  <div><h3>Redis</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Cache de alta performance, sessões, rate limiting e estratégias de fallback em integrações críticas.</p>
+              </article>
+              <article class="tech-detail-card tech-detail-wide">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-aws">AWS</span>
+                  <div>
+                    <h3>AWS · SQS · ECS · Lambda · S3</h3>
+                    <span class="tech-level tech-level-advanced">Intermediário–Avançado</span>
+                  </div>
+                </div>
+                <p>Deploy e operação em cloud: filas gerenciadas, containers, funções serverless e armazenamento de objetos.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-docker">Docker</span>
+                  <div><h3>Docker · Kubernetes</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Ambientes reproduzíveis, orquestração de containers e pipelines de entrega contínua.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-cicd">CI</span>
+                  <div><h3>CI/CD · GitFlow</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Pipelines automatizados, revisão de código, releases seguras e versionamento estruturado.</p>
+              </article>
             </div>
           </div>
-          <div class="skill-card">
-            <h3>Cloud & DevOps</h3>
-            <div class="skill-tags">
-              <span>AWS</span><span>ECS</span><span>Lambda</span>
-              <span>S3</span><span>Docker</span><span>Kubernetes</span>
-              <span>CI/CD</span><span>GitFlow</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3>Qualidade & Observabilidade</h3>
-            <div class="skill-tags">
-              <span>Testes automatizados</span><span>TDD</span>
-              <span>Sentry</span><span>Grafana</span>
-              <span>Prometheus</span><span>SonarQube</span>
-            </div>
-          </div>
-          <div class="skill-card">
-            <h3>Práticas</h3>
-            <div class="skill-tags">
-              <span>Clean Code</span><span>SOLID</span>
-              <span>Arquitetura escalável</span><span>Code Review</span>
-              <span>Power BI</span>
+
+          <div class="stack-panel" id="panel-quality" role="tabpanel" hidden>
+            <div class="tech-detail-grid">
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-tests">TDD</span>
+                  <div><h3>Testes automatizados · TDD</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Testes unitários e de integração em arquiteturas distribuídas — validação de fluxos complexos entre serviços.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-sentry">Sentry</span>
+                  <div><h3>Sentry</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Monitoramento proativo, rastreamento de erros e manutenção preventiva em produção.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-grafana">Obs</span>
+                  <div><h3>Grafana · Prometheus</h3><span class="tech-level tech-level-mid">Intermediário–Avançado</span></div>
+                </div>
+                <p>Métricas, alertas e dashboards para saúde de microsserviços e SLAs.</p>
+              </article>
+              <article class="tech-detail-card">
+                <div class="tech-detail-head">
+                  <span class="tech-icon tech-sonar">SQ</span>
+                  <div><h3>SonarQube · Clean Code · SOLID</h3><span class="tech-level tech-level-advanced">Avançado</span></div>
+                </div>
+                <p>Qualidade de código, dívida técnica controlada e arquitetura sustentável em equipes de escala.</p>
+              </article>
             </div>
           </div>
         </div>
 
+        <h3 class="arch-title">Exemplos de arquitetura em produção</h3>
+        <p class="section-sub arch-sub">Cenários reais onde combino múltiplas tecnologias do perfil.</p>
+
+        <div class="arch-grid">
+          <article class="arch-card">
+            <h4>Microsserviços · Travel & integrações</h4>
+            <p class="arch-context">Onfly — hotéis, rodoviário e câmbio</p>
+            <div class="arch-flow">
+              <span>Cliente B2B</span>
+              <span class="arch-arrow">→</span>
+              <span>API Gateway</span>
+              <span class="arch-arrow">→</span>
+              <span>Hyperf / Node</span>
+              <span class="arch-arrow">→</span>
+              <span>RabbitMQ</span>
+              <span class="arch-arrow">→</span>
+              <span>SOAP/REST Providers</span>
+            </div>
+            <ul class="arch-stack-list">
+              <li><strong>PHP Hyperf</strong> + Node.js para serviços de domínio</li>
+              <li><strong>SOAP</strong> para GDS/legado · <strong>REST</strong> para APIs modernas</li>
+              <li><strong>Redis</strong> cache/fallback · <strong>RabbitMQ</strong> filas</li>
+              <li><strong>Docker</strong> · <strong>Sentry</strong> · testes de integração</li>
+            </ul>
+          </article>
+          <article class="arch-card">
+            <h4>Full Stack · Marketplace</h4>
+            <p class="arch-context">Techshop — produtos, vendas e frete</p>
+            <div class="arch-flow">
+              <span>React UI</span>
+              <span class="arch-arrow">→</span>
+              <span>Express API</span>
+              <span class="arch-arrow">→</span>
+              <span>SQL Server</span>
+              <span class="arch-arrow">→</span>
+              <span>APIs Frete</span>
+            </div>
+            <ul class="arch-stack-list">
+              <li><strong>React</strong> front · <strong>Node Express</strong> backend</li>
+              <li><strong>SQL Server</strong> modelagem e performance</li>
+              <li><strong>REST</strong> integrações · princípios <strong>SOLID</strong></li>
+            </ul>
+          </article>
+          <article class="arch-card">
+            <h4>CRM · Certificação digital</h4>
+            <p class="arch-context">Link — compras, vendas e NFS-e</p>
+            <div class="arch-flow">
+              <span>Laravel CRM</span>
+              <span class="arch-arrow">→</span>
+              <span>REST APIs</span>
+              <span class="arch-arrow">→</span>
+              <span>SOAP NFS-e</span>
+              <span class="arch-arrow">→</span>
+              <span>Power BI</span>
+            </div>
+            <ul class="arch-stack-list">
+              <li><strong>Laravel/PHP</strong> sistema completo de gestão</li>
+              <li><strong>SOAP</strong> emissão fiscal · <strong>REST</strong> integrações</li>
+              <li><strong>Power BI</strong> relatórios executivos</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="stack-matrix">
+          <h3 class="stack-matrix-title">Matriz completa do perfil</h3>
+          <div class="matrix-table-wrap">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th>Área</th>
+                  <th>Tecnologias</th>
+                  <th>Complexidade / uso</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Área">Backend</td>
+                  <td data-label="Tecnologias">PHP (Hyperf, Laravel), Node.js (Express), Go, C#, Loopback 4</td>
+                  <td data-label="Uso">Microsserviços, APIs de alto volume, workers e domínios B2B</td>
+                </tr>
+                <tr>
+                  <td data-label="Área">Frontend</td>
+                  <td data-label="Tecnologias">React, Next.js, TypeScript, AngularJS</td>
+                  <td data-label="Uso">SPAs, dashboards, apps tipados e legado mantido</td>
+                </tr>
+                <tr>
+                  <td data-label="Área">Integrações</td>
+                  <td data-label="Tecnologias">REST, SOAP, APIs distribuídas, Microsserviços</td>
+                  <td data-label="Uso">Legado + moderno, travel, fiscal e marketplaces</td>
+                </tr>
+                <tr>
+                  <td data-label="Área">Dados</td>
+                  <td data-label="Tecnologias">PostgreSQL, SQL Server, DynamoDB, Power BI</td>
+                  <td data-label="Uso">Transacional, analytics e NoSQL em cloud</td>
+                </tr>
+                <tr>
+                  <td data-label="Área">Mensageria</td>
+                  <td data-label="Tecnologias">RabbitMQ, Redis, AWS SQS</td>
+                  <td data-label="Uso">Assíncrono, cache, filas e resiliência</td>
+                </tr>
+                <tr>
+                  <td data-label="Área">Infra</td>
+                  <td data-label="Tecnologias">Docker, Kubernetes, AWS (ECS, Lambda, S3)</td>
+                  <td data-label="Uso">Deploy, escala horizontal e serverless</td>
+                </tr>
+                <tr>
+                  <td data-label="Área">Qualidade</td>
+                  <td data-label="Tecnologias">Testes automatizados, CI/CD, GitFlow, SonarQube, Sentry, Grafana, Prometheus</td>
+                  <td data-label="Uso">Confiabilidade, observabilidade e entrega contínua</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <div class="skill-levels">
-          <h3 class="skill-levels-title">Domínio principal</h3>
-          <div class="level-item">
-            <div class="level-header"><span>PHP / Hyperf / Laravel</span><span>Avançado</span></div>
-            <div class="level-bar"><div class="level-fill" style="width: 92%"></div></div>
-          </div>
-          <div class="level-item">
-            <div class="level-header"><span>Node.js / TypeScript</span><span>Avançado</span></div>
-            <div class="level-bar"><div class="level-fill" style="width: 88%"></div></div>
-          </div>
-          <div class="level-item">
-            <div class="level-header"><span>Integrações REST & SOAP</span><span>Avançado</span></div>
-            <div class="level-bar"><div class="level-fill" style="width: 90%"></div></div>
-          </div>
-          <div class="level-item">
-            <div class="level-header"><span>React / Next.js</span><span>Intermediário–Avançado</span></div>
-            <div class="level-bar"><div class="level-fill" style="width: 78%"></div></div>
-          </div>
-          <div class="level-item">
-            <div class="level-header"><span>Go / AWS / Docker</span><span>Intermediário–Avançado</span></div>
-            <div class="level-bar"><div class="level-fill" style="width: 75%"></div></div>
+          <h3 class="skill-levels-title">Proficiência por domínio</h3>
+          <div class="levels-grid">
+            <div class="level-item">
+              <div class="level-header"><span>PHP / Hyperf / Laravel</span><span>92%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="92"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>Integrações REST & SOAP</span><span>90%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="90"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>Node.js / TypeScript</span><span>88%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="88"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>RabbitMQ / Redis</span><span>85%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="85"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>React / Next.js</span><span>78%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="78"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>AWS / Docker / K8s</span><span>75%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="75"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>Go / DynamoDB</span><span>70%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="70"></div></div>
+            </div>
+            <div class="level-item">
+              <div class="level-header"><span>Grafana / Prometheus / SonarQube</span><span>72%</span></div>
+              <div class="level-bar"><div class="level-fill" data-width="72"></div></div>
+            </div>
           </div>
         </div>
       </div>
@@ -230,44 +632,65 @@
       <h2 class="section-title"><span class="section-num">04.</span> Projetos</h2>
       <div class="projects-grid">
         <a href="https://github.com/kaiqueRoc/user-profile-app" target="_blank" rel="noopener" class="project-card">
-          <span class="project-lang">TypeScript</span>
+          <span class="project-lang">TypeScript · React</span>
           <h3>user-profile-app</h3>
-          <p>Aplicação de perfil de usuário com stack moderna.</p>
+          <p>Aplicação de perfil com stack moderna, componentização e tipagem forte.</p>
+          <div class="project-stack">
+            <span>TypeScript</span><span>React</span><span>REST API</span><span>CSS Modules</span>
+          </div>
           <span class="project-link">GitHub →</span>
         </a>
         <a href="https://github.com/kaiqueRoc/open-food" target="_blank" rel="noopener" class="project-card">
-          <span class="project-lang">PHP</span>
+          <span class="project-lang">PHP · REST API</span>
           <h3>open-food</h3>
-          <p>API REST integrada ao Open Food Facts.</p>
+          <p>API REST consumindo Open Food Facts — integração externa e tratamento de dados.</p>
+          <div class="project-stack">
+            <span>PHP</span><span>REST</span><span>HTTP Client</span><span>JSON</span>
+          </div>
           <span class="project-link">GitHub →</span>
         </a>
         <a href="https://github.com/kaiqueRoc/sistema_controle_despesas" target="_blank" rel="noopener" class="project-card">
-          <span class="project-lang">PHP</span>
+          <span class="project-lang">PHP · CRUD</span>
           <h3>sistema_controle_despesas</h3>
-          <p>Sistema de controle e gestão de despesas.</p>
+          <p>Sistema completo de controle financeiro com persistência e regras de negócio.</p>
+          <div class="project-stack">
+            <span>PHP</span><span>MySQL/PostgreSQL</span><span>MVC</span><span>Relatórios</span>
+          </div>
           <span class="project-link">GitHub →</span>
         </a>
         <a href="https://github.com/kaiqueRoc/lendwise" target="_blank" rel="noopener" class="project-card">
-          <span class="project-lang">C++</span>
+          <span class="project-lang">C++ · Algoritmos</span>
           <h3>lendwise</h3>
-          <p>Simulador de empréstimos e análise financeira.</p>
+          <p>Simulador de empréstimos com lógica financeira e estruturas de dados.</p>
+          <div class="project-stack">
+            <span>C++</span><span>OOP</span><span>Cálculos financeiros</span>
+          </div>
           <span class="project-link">GitHub →</span>
         </a>
         <a href="https://github.com/kaiqueRoc/shortcut" target="_blank" rel="noopener" class="project-card">
-          <span class="project-lang">Go</span>
+          <span class="project-lang">Go · CLI</span>
           <h3>shortcut</h3>
-          <p>Utilitário em Go para automação de tarefas.</p>
+          <p>Utilitário em Go — concorrência, performance e automação de tarefas.</p>
+          <div class="project-stack">
+            <span>Go</span><span>CLI</span><span>Concorrência</span>
+          </div>
           <span class="project-link">GitHub →</span>
         </a>
         <article class="project-card project-card-static">
-          <span class="project-lang">Acadêmico</span>
+          <span class="project-lang">E-commerce · PUC Minas</span>
           <h3>Point Dog</h3>
-          <p>E-commerce social para adoção de pets (PUC Minas). Melhor trabalho no We Make Software.</p>
+          <p>E-commerce social para adoção de pets. Melhor trabalho no We Make Software.</p>
+          <div class="project-stack">
+            <span>Engenharia de Software</span><span>E-commerce</span><span>Full Stack</span>
+          </div>
         </article>
         <article class="project-card project-card-static">
-          <span class="project-lang">Social</span>
+          <span class="project-lang">CRM · Social</span>
           <h3>Cat Connect CRM</h3>
-          <p>Plataforma para ONGs: adoção, redes sociais e gestão de processos.</p>
+          <p>Plataforma para ONGs com gestão de adoção, redes sociais e fluxos operacionais.</p>
+          <div class="project-stack">
+            <span>CRM</span><span>PHP</span><span>REST</span><span>Integrações sociais</span>
+          </div>
         </article>
       </div>
     </section>
