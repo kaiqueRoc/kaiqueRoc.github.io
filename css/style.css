@@ -861,6 +861,15 @@ a:hover { color: var(--accent); }
   color: inherit;
 }
 
+.project-card-featured {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--accent) 6%, var(--bg-card)),
+    var(--bg-card)
+  );
+}
+
 .project-card-static { cursor: default; }
 .project-card-static:hover { transform: none; box-shadow: none; border-color: var(--border); }
 
