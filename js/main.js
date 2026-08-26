@@ -37,28 +37,3 @@ stackTabs.forEach((tab) => {
     });
   });
 });
-
-/* Animate proficiency bars on scroll */
-const animateBars = (container) => {
-  container.querySelectorAll(".level-fill").forEach((bar) => {
-    const width = bar.dataset.width;
-    if (width) {
-      bar.style.setProperty("--w", `${width}%`);
-      bar.classList.add("animated");
-    }
-  });
-};
-
-const levelObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        animateBars(entry.target);
-        levelObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-
-document.querySelectorAll(".skill-levels").forEach((el) => levelObserver.observe(el));

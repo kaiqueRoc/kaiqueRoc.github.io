@@ -5,7 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Kaique Rocha — Software Engineer especializado em microsserviços, integrações e backend de alto desempenho." />
   <meta name="author" content="Kaique Rocha" />
+  <meta name="theme-color" content="#0d1117" />
   <title>Kaique Rocha · Software Engineer</title>
+
+  <link rel="canonical" href="https://kaiqueroc.github.io/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:url" content="https://kaiqueroc.github.io/" />
+  <meta property="og:site_name" content="Kaique Rocha" />
+  <meta property="og:title" content="Kaique Rocha · Software Engineer" />
+  <meta property="og:description" content="Software Engineer especializado em microsserviços, integrações e backend de alto desempenho. +5 anos em APIs, TypeScript, PHP e sistemas distribuídos." />
+  <meta property="og:image" content="https://kaiqueroc.github.io/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Kaique Rocha — Software Engineer" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kaique Rocha · Software Engineer" />
+  <meta name="twitter:description" content="Software Engineer especializado em microsserviços, integrações e backend de alto desempenho." />
+  <meta name="twitter:image" content="https://kaiqueroc.github.io/assets/og-image.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kaique Rocha",
+    "url": "https://kaiqueroc.github.io/",
+    "image": "https://kaiqueroc.github.io/assets/avatar.jpg",
+    "jobTitle": "Software Engineer",
+    "description": "Software Engineer especializado em microsserviços, integrações e backend de alto desempenho.",
+    "email": "mailto:kaiquerocc@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "PUC Minas"
+    },
+    "knowsAbout": [
+      "Microsserviços",
+      "TypeScript",
+      "PHP",
+      "Node.js",
+      "Integrações REST",
+      "SOAP",
+      "RabbitMQ",
+      "AWS"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/kaiqueroc",
+      "https://github.com/kaiqueRoc"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -38,8 +99,20 @@
   <main>
     <section class="hero container">
       <div class="hero-content">
-        <p class="hero-label" data-i18n="hero.label">Software Engineer · Belo Horizonte, MG</p>
-        <h1 data-i18n="hero.title" data-i18n-html="true">Olá, eu sou <span class="gradient-text">Kaique Rocha</span></h1>
+        <div class="hero-identity">
+          <img
+            class="hero-avatar"
+            src="assets/avatar.jpg"
+            alt="Foto de Kaique Rocha"
+            width="88"
+            height="88"
+            decoding="async"
+          />
+          <div>
+            <p class="hero-label" data-i18n="hero.label">Software Engineer · Belo Horizonte, MG</p>
+            <h1 data-i18n="hero.title" data-i18n-html="true">Olá, eu sou <span class="gradient-text">Kaique Rocha</span></h1>
+          </div>
+        </div>
         <p class="hero-desc" data-i18n="hero.desc" data-i18n-html="true">
           Desenvolvo <strong>microsserviços e integrações de alto desempenho</strong> com foco em
           escalabilidade, performance e clean code. +5 anos construindo APIs, sistemas distribuídos
@@ -47,6 +120,8 @@
         </p>
         <div class="hero-cta">
           <a href="#projetos" class="btn btn-primary" data-i18n="hero.cta.projects">Ver projetos</a>
+          <a href="assets/kaique-rocha-cv.pdf" class="btn btn-outline" download data-i18n="hero.cta.cv">Baixar CV</a>
+          <a href="mailto:kaiquerocc@gmail.com" class="btn btn-outline">E-mail</a>
           <a href="https://www.linkedin.com/in/kaiqueroc" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
           <a href="https://github.com/kaiqueRoc" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
         </div>
@@ -613,36 +688,52 @@
           <h3 class="skill-levels-title" data-i18n="levels.title">Proficiência por domínio</h3>
           <div class="levels-grid">
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l1">PHP / Hyperf / Laravel</span><span>92%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="92"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l1">PHP / Hyperf / Laravel</span>
+                <span class="tech-level tech-level-advanced" data-i18n="level.advancedProd">Avançado · Produção</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l2">Integrações REST & SOAP</span><span>90%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="90"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l2">Integrações REST & SOAP</span>
+                <span class="tech-level tech-level-advanced" data-i18n="level.advancedProd">Avançado · Produção</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l3">Node.js / TypeScript</span><span>88%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="88"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l3">Node.js / TypeScript</span>
+                <span class="tech-level tech-level-advanced" data-i18n="level.advancedProd">Avançado · Produção</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l4">RabbitMQ / Redis</span><span>85%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="85"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l4">RabbitMQ / Redis</span>
+                <span class="tech-level tech-level-advanced" data-i18n="level.advanced">Avançado</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l5">React / Next.js</span><span>78%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="78"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l5">React / Next.js</span>
+                <span class="tech-level tech-level-mid" data-i18n="level.mid">Intermediário–Avançado</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l6">AWS / Docker / K8s</span><span>75%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="75"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l6">AWS / Docker / K8s</span>
+                <span class="tech-level tech-level-mid" data-i18n="level.mid">Intermediário–Avançado</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l7">Go / DynamoDB</span><span>70%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="70"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l7">Go / DynamoDB</span>
+                <span class="tech-level tech-level-mid" data-i18n="level.mid2">Intermediário</span>
+              </div>
             </div>
             <div class="level-item">
-              <div class="level-header"><span data-i18n="level.l8">Grafana / Prometheus / SonarQube</span><span>72%</span></div>
-              <div class="level-bar"><div class="level-fill" data-width="72"></div></div>
+              <div class="level-header">
+                <span data-i18n="level.l8">Grafana / Prometheus / SonarQube</span>
+                <span class="tech-level tech-level-mid" data-i18n="level.mid">Intermediário–Avançado</span>
+              </div>
             </div>
           </div>
         </div>
@@ -652,14 +743,14 @@
     <section id="projetos" class="section container">
       <h2 class="section-title"><span class="section-num">04.</span> <span data-i18n="projects.title">Projetos</span></h2>
       <div class="projects-grid">
-        <a href="/trip-sync-platform/" class="project-card project-card-featured">
-          <span class="project-lang">TripSync · Ecossistema</span>
-          <h3>Preview TripSync</h3>
-          <p>Portfólio B2B travel — contratos OpenAPI, API, console ops e plataforma multi-tenant.</p>
+        <a href="https://trip-sync-platform.vercel.app" target="_blank" rel="noopener" class="project-card project-card-featured">
+          <span class="project-lang">TripSync · Demo ao vivo</span>
+          <h3>TripSync Platform</h3>
+          <p data-i18n="projects.tripsync.desc">Demo B2B travel com login, dashboard, reservas seed e RBAC multi-tenant — rodando na Vercel.</p>
           <div class="project-stack">
-            <span>TypeScript</span><span>Next.js</span><span>Fastify</span><span>OpenAPI</span><span>RBAC</span>
+            <span>TypeScript</span><span>Next.js</span><span>Prisma</span><span>NextAuth</span><span>RBAC</span>
           </div>
-          <span class="project-link">Ver preview →</span>
+          <span class="project-link" data-i18n="projects.tripsync.cta">Abrir demo →</span>
         </a>
         <a href="https://github.com/kaiqueRoc/trip-sync-contracts" target="_blank" rel="noopener" class="project-card project-card-featured">
           <span class="project-lang">TypeScript · Zod · OpenAPI</span>
@@ -769,15 +860,14 @@
             <h3 data-i18n="edu.degree">Engenharia de Software</h3>
             <p data-i18n="edu.school">PUC Minas · 2019–2023 · Belo Horizonte</p>
           </div>
-          <ul class="cert-list">
-            <li><a href="https://www.hackerrank.com/certificates/9613e8274ff5" target="_blank" rel="noopener">Node (Basic) — HackerRank</a></li>
-            <li><a href="https://coodesh.com/share/certificate/f96ccec0-0f97-11ee-9234-9bdd9bab42c4" target="_blank" rel="noopener">PHP — Coodesh</a></li>
-            <li><a href="https://coodesh.com/share/certificate/bc74c940-0f98-11ee-9234-c7bac91514fe" target="_blank" rel="noopener">PHP Avançado — Coodesh</a></li>
-            <li><a href="https://coodesh.com/share/certificate/3c415e20-0555-11ee-9234-ed12d763428d" target="_blank" rel="noopener">ReactJS — Coodesh</a></li>
-            <li><a href="https://coodesh.com/share/certificate/3f347b40-fbe5-11ed-9234-398d55d6a961" target="_blank" rel="noopener">Node.js — Coodesh</a></li>
-            <li data-i18n="edu.c6">C# e orientação a objetos — Alura</li>
-            <li data-i18n="edu.c7">Bootcamp Full Stack Java & Angular — DIO</li>
-          </ul>
+          <div class="cert-block">
+            <h3 class="cert-heading" data-i18n="edu.certs.title">Certificações relevantes</h3>
+            <ul class="cert-list">
+              <li><a href="https://coodesh.com/share/certificate/bc74c940-0f98-11ee-9234-c7bac91514fe" target="_blank" rel="noopener">PHP Avançado — Coodesh</a></li>
+              <li><a href="https://coodesh.com/share/certificate/3f347b40-fbe5-11ed-9234-398d55d6a961" target="_blank" rel="noopener">Node.js — Coodesh</a></li>
+              <li><a href="https://coodesh.com/share/certificate/3c415e20-0555-11ee-9234-ed12d763428d" target="_blank" rel="noopener">ReactJS — Coodesh</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -786,6 +876,14 @@
       <h2 class="section-title"><span class="section-num">06.</span> <span data-i18n="contact.title">Contato</span></h2>
       <p class="contact-text" data-i18n="contact.text">Aberto a conversas sobre backend, integrações, microsserviços e oportunidades.</p>
       <div class="contact-links">
+        <a href="mailto:kaiquerocc@gmail.com" class="contact-card">
+          <span class="contact-icon">@</span>
+          <span>kaiquerocc@gmail.com</span>
+        </a>
+        <a href="assets/kaique-rocha-cv.pdf" class="contact-card" download>
+          <span class="contact-icon">cv</span>
+          <span data-i18n="contact.cv">Currículo (PDF)</span>
+        </a>
         <a href="https://www.linkedin.com/in/kaiqueroc" target="_blank" rel="noopener" class="contact-card">
           <span class="contact-icon">in</span>
           <span>LinkedIn</span>
