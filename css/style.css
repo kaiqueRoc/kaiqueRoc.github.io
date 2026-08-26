@@ -695,9 +695,61 @@ main > .section:first-of-type { border-top: none; }
   border-radius: var(--radius-lg);
   padding: 2.75rem;
   margin-bottom: 3rem;
+}
+
+.featured-project-main {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.phone-mockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.phone-frame {
+  width: 220px;
+  aspect-ratio: 9 / 19.5;
+  background: var(--bg);
+  border: 8px solid var(--bg-alt);
+  border-radius: 2.25rem;
+  box-shadow: 0 0 0 1px var(--border), var(--shadow);
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.phone-frame::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 38%;
+  height: 18px;
+  background: var(--bg-alt);
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.phone-caption {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  text-align: center;
+  max-width: 240px;
 }
 
 .featured-label {
@@ -718,7 +770,7 @@ main > .section:first-of-type { border-top: none; }
   letter-spacing: -0.01em;
 }
 
-.featured-project > div > p {
+.featured-project-main > div > p {
   color: var(--text-muted);
   font-size: 0.98rem;
   margin-bottom: 1.5rem;
@@ -742,7 +794,12 @@ main > .section:first-of-type { border-top: none; }
 
 .featured-highlights li::before { content: "✓"; position: absolute; left: 0; color: var(--green); font-size: 0.8rem; }
 
-.repo-map { display: flex; flex-direction: column; }
+.repo-map {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border-soft);
+  padding-top: 0.5rem;
+}
 
 .repo-row {
   display: block;
@@ -899,7 +956,9 @@ main > .section:first-of-type { border-top: none; }
   .hero-identity { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; }
   .edu-layout { grid-template-columns: 1fr; gap: 2rem; }
-  .featured-project { grid-template-columns: 1fr; padding: 2rem; gap: 2rem; }
+  .featured-project { padding: 2rem; }
+  .featured-project-main { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2rem; }
+  .phone-mockup { order: -1; }
 }
 
 @media (max-width: 640px) {
@@ -931,6 +990,4 @@ main > .section:first-of-type { border-top: none; }
   .stack-core { grid-template-columns: 1fr; }
 
   .timeline-item { padding-left: 1.5rem; }
-
-  .repo-map { border-top: 1px solid var(--border-soft); }
 }

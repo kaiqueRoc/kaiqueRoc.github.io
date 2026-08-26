@@ -394,17 +394,30 @@
       </div>
 
       <div class="featured-project">
-        <div>
-          <span class="featured-label" data-i18n="projects.featured.label">Projeto em destaque</span>
-          <h3>Ecossistema TripSync</h3>
-          <p data-i18n="projects.tripsync.desc">Demo B2B travel com login, dashboard, reservas seed e RBAC multi-tenant — rodando na Vercel.</p>
-          <ul class="featured-highlights">
-            <li>Isolamento multi-tenant com ADR documentado</li>
-            <li>RBAC: owner, operator e viewer</li>
-            <li>Validação schema-first com contratos compartilhados (Zod + OpenAPI 3.1)</li>
-            <li>CI em GitHub Actions em todos os repositórios</li>
-          </ul>
-          <a href="https://trip-sync-platform.vercel.app" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.tripsync.cta">Abrir demo →</a>
+        <div class="featured-project-main">
+          <div>
+            <span class="featured-label" data-i18n="projects.featured.label">Projeto em destaque</span>
+            <h3>Ecossistema TripSync</h3>
+            <p data-i18n="projects.tripsync.desc">Emissão de passagem aérea B2C — busca pública, seleção de voo e assento, pagamento mocado. Login só na hora de emitir.</p>
+            <ul class="featured-highlights">
+              <li>Busca de voos e mapa de assento mocados e determinísticos</li>
+              <li>Busca 100% pública — login só é exigido pra emitir a passagem</li>
+              <li>App mobile separado (Expo/React Native) na mesma API</li>
+              <li>Auth própria (JWT) e contratos compartilhados (Zod + OpenAPI 3.1)</li>
+            </ul>
+            <a href="https://trip-sync-platform.vercel.app" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="projects.tripsync.cta">Abrir demo →</a>
+          </div>
+          <div class="phone-mockup">
+            <div class="phone-frame">
+              <img
+                src="assets/tripsync-mobile-demo.gif"
+                alt="Demo do fluxo de reserva do TripSync em um celular: busca, seleção, emissão e confirmação"
+                class="phone-screen"
+                loading="lazy"
+              />
+            </div>
+            <p class="phone-caption" data-i18n="projects.tripsync.phoneCaption">Busca → assento → emissão, no app mobile</p>
+          </div>
         </div>
         <div class="repo-map">
           <a href="https://github.com/kaiqueRoc/trip-sync-contracts" target="_blank" rel="noopener" class="repo-row">
@@ -414,8 +427,8 @@
           </a>
           <a href="https://github.com/kaiqueRoc/trip-sync-api" target="_blank" rel="noopener" class="repo-row">
             <div class="repo-row-head"><span class="repo-name">trip-sync-api</span><span class="repo-arrow">↗</span></div>
-            <p>API REST travel B2B — Fastify, Prisma, idempotência e webhooks.</p>
-            <div class="repo-tags"><span>Fastify</span><span>Prisma</span><span>Swagger</span></div>
+            <p>API REST de voos — Fastify, Prisma, auth própria (JWT) e pagamento mocado.</p>
+            <div class="repo-tags"><span>Fastify</span><span>JWT</span><span>Swagger</span></div>
           </a>
           <a href="https://github.com/kaiqueRoc/trip-sync-ops" target="_blank" rel="noopener" class="repo-row">
             <div class="repo-row-head"><span class="repo-name">trip-sync-ops</span><span class="repo-arrow">↗</span></div>
@@ -424,8 +437,13 @@
           </a>
           <a href="https://github.com/kaiqueRoc/trip-sync-platform" target="_blank" rel="noopener" class="repo-row">
             <div class="repo-row-head"><span class="repo-name">trip-sync-platform</span><span class="repo-arrow">↗</span></div>
-            <p>Plataforma multi-tenant com auth, RBAC e trilha de auditoria.</p>
-            <div class="repo-tags"><span>Next.js</span><span>Prisma</span><span>Auth</span></div>
+            <p>Web app B2C — busca pública, checkout com login só no fim.</p>
+            <div class="repo-tags"><span>Next.js</span><span>Prisma</span><span>NextAuth</span></div>
+          </a>
+          <a href="https://github.com/kaiqueRoc/trip-sync-mobile" target="_blank" rel="noopener" class="repo-row">
+            <div class="repo-row-head"><span class="repo-name">trip-sync-mobile</span><span class="repo-arrow">↗</span></div>
+            <p>App mobile com o mesmo fluxo de busca, assento e emissão.</p>
+            <div class="repo-tags"><span>Expo</span><span>React Native</span><span>TypeScript</span></div>
           </a>
         </div>
       </div>
